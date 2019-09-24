@@ -22,3 +22,4 @@ projects: []
 ```{r echo = FALSE, fig.cap = "Love you!"}
 knitr::include_graphics("Love.png")
 ```
+
