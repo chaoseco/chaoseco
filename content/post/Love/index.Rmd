@@ -2,7 +2,7 @@
 title: 韩兰芳我爱你
 author: Chaoseco
 date: '2019-09-24'
-slug: 韩兰芳我爱你
+slug: love
 categories: []
 tags: []
 subtitle: ''
