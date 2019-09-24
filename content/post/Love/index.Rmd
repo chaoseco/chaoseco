@@ -1,0 +1,24 @@
+---
+title: 韩兰芳我爱你
+author: Chaoseco
+date: '2019-09-24'
+slug: 韩兰芳我爱你
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-24T18:41:59+08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+宝贝我爱你哟～～
+
+```{r echo = FALSE, fig.cap = "Love you!"}
+knitr::include_graphics("Love.png")
+```
