@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | ChaosEco</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>admin</title>
+      <link>/authors/admin/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert Ford</title>
+      <link>/authors/robert-ford/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/robert-ford/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/chaoseco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/chaoseco/</guid>
+      <description>&lt;p&gt;&lt;br /&gt;
+甚矣吾衰矣！&lt;br /&gt;
+怅平生、交游零落，只今馀几？&lt;br /&gt;
+白发空垂三千丈，一笑人间万事，问何物能令公喜？&lt;br /&gt;
+我见青山多妩媚，料青山见我应如是。&lt;br /&gt;
+情与貌，略相似。&lt;/p&gt;
+
+&lt;p&gt;一尊搔首东窗里，想渊明、停云诗就，此时风味。&lt;br /&gt;
+江左沉酣求名者，岂识浊醪妙理？&lt;br /&gt;
+回首叫云飞风起。&lt;br /&gt;
+不恨古人吾不见，恨古人不见吾狂耳！&lt;br /&gt;
+知我者，二三子。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

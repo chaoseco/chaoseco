@@ -1,0 +1,15 @@
+# Font style metadata
+name = "chaoseco"
+
+# Optional Google font URL
+google_fonts = "Arapey:400,400i|Karla:400,700|Roboto+Mono"
+
+# Font families
+heading_font = "Arial"
+body_font = "Arial"
+nav_font = "Arial"
+mono_font = "Arial Mono"
+
+# Font size
+font_size = "18"
+font_size_small = "16"
