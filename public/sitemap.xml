@@ -33,17 +33,27 @@
   </url>
   
   <url>
-    <loc>/tags/gis/</loc>
-    <lastmod>2019-09-24T14:52:36+08:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-09-24T14:52:36+08:00</lastmod>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/test/</loc>
+    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gis/</loc>
     <lastmod>2019-09-24T14:52:36+08:00</lastmod>
   </url>
   
@@ -79,11 +89,6 @@
   
   <url>
     <loc>/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
