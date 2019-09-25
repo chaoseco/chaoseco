@@ -9,7 +9,6 @@ title = "ChaosEco"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
 baseurl = "https://chaoseco.rbind.io/"
 
 # Enter a copyright notice to display in the site footer.
@@ -70,3 +69,11 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+  
+# Permalinks
+[permalinks]
+  posts = "/post/:year-:month-:slug/"
+  projects = "/project/:year-:slug/"
+  
+[params]
+  font = "chaoseco"

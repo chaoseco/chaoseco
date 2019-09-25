@@ -5,7 +5,7 @@
 
 widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false # Activate this widget? true/false
+active = true # Activate this widget? true/false
 weight = 45  # Order that this section will appear.
 
 title = "Get in touch"
@@ -29,15 +29,15 @@ subtitle = ""
   # gradient_end = "SkyBlue"
   
   # Background image.
-  #image = "Designlovefest_SANTANA_dress-your-tech_01_01.jpg"  # Name of image in `static/img/`.
-  #image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  image = "backgroud.jpg"  # Name of image in `static/img/`.
+  image_darken = 0.1  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 
   # Text color (true=light or false=dark).
   text_color_light = true
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  padding = ["60px", "0", "60px", "0"]
+  padding = ["10px", "0", "30px", "0"]
 
 [advanced]
  # Custom CSS. 

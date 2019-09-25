@@ -8,12 +8,12 @@ headless = true  # This file represents a page section.
 active = true # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
-title = "About me"
+title = ""
 subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "2"
+  columns = "1"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -41,7 +41,7 @@ subtitle = ""
 
 [advanced]
  # Custom CSS. 
- css_style = ""
+ css_style = "text-align: center"
  
  # CSS class.
  css_class = "mini"

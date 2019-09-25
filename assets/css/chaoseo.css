@@ -38,8 +38,9 @@ a:hover {
 }
 
 .navbar-brand {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
+  font-size: 32px;
   letter-spacing: .08em;
 }
 
@@ -100,6 +101,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: .08em;
 }
+
 
 /* make dark even/odd sections same color so less stripey */
 
