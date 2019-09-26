@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Panel | ChaosEco</title>
+    <link>/tags/panel/</link>
+      <atom:link href="/tags/panel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Panel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Thu, 26 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Panel</title>
+      <link>/tags/panel/</link>
+    </image>
+    
+    <item>
+      <title>Matlab spatial panels - Reference to non-existent field &#39;parm&#39;</title>
+      <link>/post/matlab-spatial-panels-reference-to-non-existent-field-parm/</link>
+      <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/post/matlab-spatial-panels-reference-to-non-existent-field-parm/</guid>
+      <description>
+
+
+&lt;p&gt;这个问题是由于matlab引用的文件中缺失对参数‘parm’的定义造成的。&lt;/p&gt;
+&lt;p&gt;新版的jplv7工具箱中sar_panel_FE.m没有定义result.parm，可以找到旧版的sar_panel_FE.m文件放入Elhorst文件夹，由于在路径设置中，Elhorst文件夹在jplv7文件夹之前，所以在读取顺序上旧版的sar_panel_FE.m文件会覆盖jplv7文件夹中的新版文件。&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&#34;http://bbs.pinggu.org/thread-3661610-1-1.html&#34;&gt;Source&lt;/a&gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
