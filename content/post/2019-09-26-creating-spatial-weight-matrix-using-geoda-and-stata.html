@@ -1,0 +1,25 @@
+
+
+
+<p>先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件:</p>
+<pre><code>ssc install spwmatrix
+
+* remove the first and last lines of the txt file spwmatrix import using
+spwmatrix import using C:\Users\*USER*\Desktop\Tutorial\Weights_file.gal, wname(weights) xport(weights, txt)
+
+insheet using &quot;C:\Users\*USER*\Desktop\Tutorial\weights.txt&quot;, delim(&quot; &quot;) clear
+save &quot;weights.dta&quot;
+
+gen id = _n
+order id, first
+
+rename v(#) m(#)
+rename v(##) m(##)
+rename v(###) m(###)
+
+gsort -id
+drop id
+
+gen id = _n
+order id, first</code></pre>
+<p>Source: [<a href="https://drive.google.com/file/d/0By5qMMVfcc4jRHJfNExjUV9pd2c/view">Source 1</a>][<a href="https://www.youtube.com/watch?v=54HoO0KgWLQ&amp;t=1178s&amp;index=2&amp;list=FLmPcw83WfcCSrQxTt4FSI_Q">Source 2</a>]</p>

@@ -32,5 +32,38 @@
       <description></description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/post/2019-09-26-creating-spatial-weight-matrix-using-geoda-and-stata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/2019-09-26-creating-spatial-weight-matrix-using-geoda-and-stata/</guid>
+      <description>
+
+
+&lt;p&gt;先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ssc install spwmatrix
+
+* remove the first and last lines of the txt file spwmatrix import using
+spwmatrix import using C:\Users\*USER*\Desktop\Tutorial\Weights_file.gal, wname(weights) xport(weights, txt)
+
+insheet using &amp;quot;C:\Users\*USER*\Desktop\Tutorial\weights.txt&amp;quot;, delim(&amp;quot; &amp;quot;) clear
+save &amp;quot;weights.dta&amp;quot;
+
+gen id = _n
+order id, first
+
+rename v(#) m(#)
+rename v(##) m(##)
+rename v(###) m(###)
+
+gsort -id
+drop id
+
+gen id = _n
+order id, first&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Source: [&lt;a href=&#34;https://drive.google.com/file/d/0By5qMMVfcc4jRHJfNExjUV9pd2c/view&#34;&gt;Source 1&lt;/a&gt;][&lt;a href=&#34;https://www.youtube.com/watch?v=54HoO0KgWLQ&amp;amp;t=1178s&amp;amp;index=2&amp;amp;list=FLmPcw83WfcCSrQxTt4FSI_Q&#34;&gt;Source 2&lt;/a&gt;]&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
