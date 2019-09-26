@@ -33,8 +33,23 @@
   </url>
   
   <url>
+    <loc>/post/creating-spatial-weight-matrix/</loc>
+    <lastmod>2019-09-26T11:18:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gis/</loc>
+    <lastmod>2019-09-26T11:18:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
+    <lastmod>2019-09-26T11:18:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-09-26T11:18:53+08:00</lastmod>
   </url>
   
   <url>
@@ -43,18 +58,8 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-09-25T18:36:03+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/test/</loc>
     <lastmod>2019-09-25T18:36:03+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/gis/</loc>
-    <lastmod>2019-09-24T14:52:36+08:00</lastmod>
   </url>
   
   <url>
@@ -164,11 +169,6 @@
   
   <url>
     <loc>/authors/chaoseco/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2019-09-26-creating-spatial-weight-matrix-using-geoda-and-stata/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

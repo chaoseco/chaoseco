@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件: ssc install spwmatrix * remove the first and last lines of the txt file spwmatrix import using spwmatrix import using C:\Users\*USER*\Desktop\Tutorial\Weights_file.gal, wname(weights)">
 
   
-  <link rel="alternate" hreflang="en-us" href="/">
+  <link rel="alternate" hreflang="en-us" href="/post/creating-spatial-weight-matrix/">
 
   
 
@@ -100,14 +100,12 @@
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="ChaosEco">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/post/creating-spatial-weight-matrix/">
 
   
   
@@ -120,29 +118,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="ChaosEco">
-  <meta property="og:url" content="/">
-  <meta property="og:title" content="ChaosEco">
-  <meta property="og:description" content=""><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/creating-spatial-weight-matrix/">
+  <meta property="og:title" content="Creating spatial weight matrix using Geoda and Stata | ChaosEco">
+  <meta property="og:description" content="先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件: ssc install spwmatrix * remove the first and last lines of the txt file spwmatrix import using spwmatrix import using C:\Users\*USER*\Desktop\Tutorial\Weights_file.gal, wname(weights)"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2019-09-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-09-26T11:18:53&#43;08:00">
   
 
   
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/creating-spatial-weight-matrix/"
   },
-  "url": "/"
+  "headline": "Creating spatial weight matrix using Geoda and Stata",
+  
+  "datePublished": "2019-09-26T00:00:00Z",
+  "dateModified": "2019-09-26T11:18:53+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Chao Xu"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "ChaosEco",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件: ssc install spwmatrix * remove the first and last lines of the txt file spwmatrix import using spwmatrix import using C:\\Users\\*USER*\\Desktop\\Tutorial\\Weights_file.gal, wname(weights)"
 }
 </script>
 
+  
 
   
 
@@ -156,11 +190,11 @@
 
 
 
-  <title>ChaosEco</title>
+  <title>Creating spatial weight matrix using Geoda and Stata | ChaosEco</title>
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -238,7 +272,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>HOME</span></a>
+          <a class="nav-link " href="/#about"><span>HOME</span></a>
         </li>
 
         
@@ -260,7 +294,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/post"><span>POSTS</span></a>
+          <a class="nav-link  active" href="/post"><span>POSTS</span></a>
         </li>
 
         
@@ -335,65 +369,7 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-<span class="js-widget-page d-none"></span>
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="about" class="home-section wg-about   "  >
-    <div class="container">
-      
-
-
-
+  <article class="article">
 
   
 
@@ -405,288 +381,21 @@
 
 
 
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="portrait" src="/authors/chaoseco/avatar_hub86e7ce97513799519b149c82db02658_80837_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2>Chao Xu</h2>
-        
-
-        
-        <h3>
-          <a href="chaoseco.netlify.com" target="_blank" rel="noopener">
-          <span>ChaosEco</span>
-          </a>
-        </h3>
-        
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="/#contact" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a href="https://github.com/chaoseco" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-    
-
-    <p><br />
-甚矣吾衰矣！<br />
-怅平生、交游零落，只今馀几？<br />
-白发空垂三千丈，一笑人间万事，问何物能令公喜？<br />
-我见青山多妩媚，料青山见我应如是。<br />
-情与貌，略相似。</p>
-
-<p>一尊搔首东窗里，想渊明、停云诗就，此时风味。<br />
-江左沉酣求名者，岂识浊醪妙理？<br />
-回首叫云飞风起。<br />
-不恨古人吾不见，恨古人不见吾狂耳！<br />
-知我者，二三子。</p>
 
 
-    <div class="row">
-
-      
-
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
 
   
 
   
+  
+  
+<div class="article-container pt-3">
+  <h1>Creating spatial weight matrix using Geoda and Stata</h1>
 
   
 
   
     
-    
-  
-
-  
-    
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="demo" class="home-section wg-blank   " style="padding: 0px 0 20px 0;text-align: center" >
-    <div class="container">
-      
-
-
-<div class="row">
-  
-    <div class="col-lg-12">
-      <h1>Lately</h1>
-      
-      
-    </div>
-  
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="posts" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1></h1>
-    <p>RECENT POSTS</p>
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/creating-spatial-weight-matrix/" >Creating spatial weight matrix using Geoda and Stata</a>
-    </h3>
-
-    
-    <div class="article-style">
-      先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件: ssc install spwmatrix * remove the first and last lines of the txt file spwmatrix …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 
@@ -724,288 +433,275 @@
   
 
   
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/creating-spatial-weight-matrix/&amp;text=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/creating-spatial-weight-matrix/&amp;t=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata&amp;body=/post/creating-spatial-weight-matrix/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/creating-spatial-weight-matrix/&amp;title=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata%20/post/creating-spatial-weight-matrix/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/creating-spatial-weight-matrix/&amp;title=Creating%20spatial%20weight%20matrix%20using%20Geoda%20and%20Stata" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
 
 </div>
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
       
+
+
+<p>先使用Geoda生成gal文件，然后使用下面的stata commands来生成空间加权矩阵文件:</p>
+<pre><code>ssc install spwmatrix
+
+* remove the first and last lines of the txt file spwmatrix import using
+spwmatrix import using C:\Users\*USER*\Desktop\Tutorial\Weights_file.gal, wname(weights) xport(weights, txt)
+
+insheet using &quot;C:\Users\*USER*\Desktop\Tutorial\weights.txt&quot;, delim(&quot; &quot;) clear
+save &quot;weights.dta&quot;
+
+gen id = _n
+order id, first
+
+rename v(#) m(#)
+rename v(##) m(##)
+rename v(###) m(###)
+
+gsort -id
+drop id
+
+gen id = _n
+order id, first</code></pre>
+<p>Source: [<a href="https://drive.google.com/file/d/0By5qMMVfcc4jRHJfNExjUV9pd2c/view">Source 1</a>][<a href="https://www.youtube.com/watch?v=54HoO0KgWLQ&amp;t=1178s&amp;index=2&amp;list=FLmPcw83WfcCSrQxTt4FSI_Q">Source 2</a>]</p>
+
     </div>
 
     
 
-  </div>
-  <div class="ml-3">
+
     
-    
-  </div>
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/gis/">GIS</a>
+  
 </div>
 
-      
+
+
     
       
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card">
+    
+      
+      <img class="portrait mr-3" src="/authors/chaoseco/avatar_hub86e7ce97513799519b149c82db02658_80837_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Chao Xu</a></h5>
+      
+      <p class="card-text">balabala.</p>
+      <ul class="network-icon" aria-hidden="true">
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/test/" >test</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
         
-
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Sep 25, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    1 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-  
-
-</div>
-
-      
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a href="https://github.com/chaoseco" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
-
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
 
-      
-    
-      
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/%E5%BC%84%E4%B8%80%E4%B8%AA%E7%89%B9%E5%88%AB%E9%95%BF%E7%9A%84%E5%90%8D%E5%AD%97%E7%9C%8B%E7%9C%8B%E5%88%B0%E5%BA%95%E4%BC%9A%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7/" >弄一个特别长的名字看看到底会是怎么样</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-          Last updated on
-      
-    
-    Sep 24, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    0 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="tags" class="home-section wg-tag-cloud   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1></h1>
-    <p>POPULAR TOPICS</p>
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
 
       
       
-      
-      
-      
-
-      <div class="tag-cloud">
-        
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
           
+          <li><a href="/post/%E5%BC%84%E4%B8%80%E4%B8%AA%E7%89%B9%E5%88%AB%E9%95%BF%E7%9A%84%E5%90%8D%E5%AD%97%E7%9C%8B%E7%9C%8B%E5%88%B0%E5%BA%95%E4%BC%9A%E6%98%AF%E6%80%8E%E4%B9%88%E6%A0%B7/">弄一个特别长的名字看看到底会是怎么样</a></li>
           
+          <li><a href="/publication/conference-paper/">An example conference paper</a></li>
           
-          <a href="/tags/gis/" style="font-size:0.7rem">GIS</a>
-        
+          <li><a href="/project/internal-project/">Internal Project</a></li>
           
-          
-          
-          <a href="/tags/r/" style="font-size:0.7rem">R</a>
-        
+        </ul>
       </div>
+      
     
 
+    
+
+    
+
+
   </div>
-</div>
-
-    </div>
-  </section>
-
-
+</article>
 
       
 

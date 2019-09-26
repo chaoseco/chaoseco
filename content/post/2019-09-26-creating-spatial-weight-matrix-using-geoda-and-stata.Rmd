@@ -1,8 +1,8 @@
-﻿---
+---
 title: Creating spatial weight matrix using Geoda and Stata
 author: Chao
 date: '2019-09-26'
-slug: creating-spatial-weight-matrix-using-geoda-and-stata
+slug: creating-spatial-weight-matrix
 categories: []
 tags:
   - GIS
