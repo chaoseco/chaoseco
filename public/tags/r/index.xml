@@ -5,24 +5,12 @@
     <link>/tags/r/</link>
       <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>R</title>
       <link>/tags/r/</link>
     </image>
-    
-    <item>
-      <title>test</title>
-      <link>/post/test/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/post/test/</guid>
-      <description>
-
-
-&lt;p&gt;lalalalalal&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>An example preprint / working paper</title>
