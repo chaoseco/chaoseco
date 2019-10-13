@@ -360,7 +360,7 @@
     <h2><a href="/post/how-to-create-sequential-numbers-in-a-field-using-python-in-the-field-calculator/">How To: Create sequential numbers in a field using Python in the Field Calculator</a></h2>
     <div class="article-style">
       
-      Create a new short integer field.Right-click the new field and select Field Calculator.Set the Parser to Python.Check the check box for Show Codeblock.Paste the following into the Pre-Logic Script Code:rec=0\\ def autoIncrement():\\ global rec\\ pStart = 1\\ pInterval = 1\\ if (rec == 0):\\ rec = pStart\\ else:\\ rec += pInterval\\ return rec\\
+      Create a new short integer field.Right-click the new field and select Field Calculator.Set the Parser to Python.Check the check box for Show Codeblock.Paste the following into the Pre-Logic Script Code:rec=0 def autoIncrement(): global rec pStart = 1 pInterval = 1 if (rec == 0): rec = pStart else: rec += pInterval return rec
 Paste the following code in the smaller box below the Pre-Logic Script Code:autoIncrement()
       
     </div>
