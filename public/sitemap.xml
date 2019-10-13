@@ -33,17 +33,32 @@
   </url>
   
   <url>
+    <loc>/tags/gis/</loc>
+    <lastmod>2019-10-13T21:41:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/how-to-create-sequential-numbers-in-a-field-using-python-in-the-field-calculator/</loc>
+    <lastmod>2019-10-13T21:41:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-10-13T21:41:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-10-13T21:41:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/creating-spatial-weight-matrix/</loc>
     <lastmod>2019-09-26T11:18:53+08:00</lastmod>
   </url>
   
   <url>
     <loc>/post/cut-a-polyline-with-another-polyline-or-point/</loc>
-    <lastmod>2019-09-26T13:09:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/gis/</loc>
     <lastmod>2019-09-26T13:09:31+08:00</lastmod>
   </url>
   
@@ -55,16 +70,6 @@
   <url>
     <loc>/tags/panel/</loc>
     <lastmod>2019-09-26T13:03:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-09-26T13:09:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-09-26T13:09:31+08:00</lastmod>
   </url>
   
   <url>

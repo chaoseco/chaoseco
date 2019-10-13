@@ -1,0 +1,30 @@
+---
+title: 'How To: Create sequential numbers in a field using Python in the Field Calculator'
+author: ''
+date: '2019-10-13'
+slug: how-to-create-sequential-numbers-in-a-field-using-python-in-the-field-calculator
+categories: []
+tags:
+  - GIS
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-10-13T21:41:54+08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<ol style="list-style-type: decimal">
+<li>Create a new short integer field.</li>
+<li>Right-click the new field and select Field Calculator.</li>
+<li>Set the Parser to Python.</li>
+<li>Check the check box for Show Codeblock.</li>
+<li>Paste the following into the Pre-Logic Script Code:</li>
+</ol>
+<p><code>rec=0  def autoIncrement():   global rec   pStart = 1    pInterval = 1   if (rec == 0):     rec = pStart    else:     rec += pInterval    return rec</code> 6. Paste the following code in the smaller box below the Pre-Logic Script Code: <code>autoIncrement()</code> 7. Click OK.</p>
