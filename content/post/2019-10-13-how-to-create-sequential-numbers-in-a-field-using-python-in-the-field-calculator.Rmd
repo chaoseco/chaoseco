@@ -29,19 +29,24 @@ knitr::opts_chunk$set(eval = FALSE, collapse = TRUE, comment = NA, tidy = FALSE,
 5. Paste the following into the Pre-Logic Script Code:
 
 ```
-rec=0 
-def autoIncrement(): 
- global rec 
- pStart = 1  
- pInterval = 1 
- if (rec == 0):  
-  rec = pStart  
- else:  
-  rec += pInterval  
+rec=0
+def autoIncrement():
+ global rec
+ pStart = 1
+ pInterval = 1
+ if (rec == 0):
+  rec = pStart
+ else:
+  rec += pInterval
  return rec
  ```
+ 
  6. Paste the following code in the smaller box below the Pre-Logic Script Code:
+ 
  ```
  autoIncrement()
  ```
  7. Click OK. 
+ 
+ Source:
+[[Source 1](https://support.esri.com/en/technical-article/000011137)]
