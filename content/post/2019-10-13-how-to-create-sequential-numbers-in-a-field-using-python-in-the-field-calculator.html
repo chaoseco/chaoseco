@@ -27,11 +27,20 @@ projects: []
 <li>Check the check box for Show Codeblock.</li>
 <li>Paste the following into the Pre-Logic Script Code:</li>
 </ol>
-<p><code>rec=0 def autoIncrement():  global rec  pStart = 1  pInterval = 1  if (rec == 0):   rec = pStart  else:   rec += pInterval  return rec</code></p>
+<pre><code>rec=0
+def autoIncrement():
+ global rec
+ pStart = 1
+ pInterval = 1
+ if (rec == 0):
+  rec = pStart
+ else:
+  rec += pInterval
+ return rec</code></pre>
 <ol start="6" style="list-style-type: decimal">
 <li>Paste the following code in the smaller box below the Pre-Logic Script Code:</li>
 </ol>
-<p><code>autoIncrement()</code></p>
+<pre><code>autoIncrement()</code></pre>
 <ol start="7" style="list-style-type: decimal">
 <li>Click OK.</li>
 </ol>

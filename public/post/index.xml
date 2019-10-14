@@ -27,11 +27,20 @@
 &lt;li&gt;Check the check box for Show Codeblock.&lt;/li&gt;
 &lt;li&gt;Paste the following into the Pre-Logic Script Code:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;rec=0 def autoIncrement():  global rec  pStart = 1  pInterval = 1  if (rec == 0):   rec = pStart  else:   rec += pInterval  return rec&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rec=0
+def autoIncrement():
+ global rec
+ pStart = 1
+ pInterval = 1
+ if (rec == 0):
+  rec = pStart
+ else:
+  rec += pInterval
+ return rec&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Paste the following code in the smaller box below the Pre-Logic Script Code:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;autoIncrement()&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;autoIncrement()&lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Click OK.&lt;/li&gt;
 &lt;/ol&gt;

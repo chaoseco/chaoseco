@@ -39,13 +39,13 @@ def autoIncrement():
  else:
   rec += pInterval
  return rec
- ```
+```
  
  6. Paste the following code in the smaller box below the Pre-Logic Script Code:
  
- ```
- autoIncrement()
- ```
+```
+autoIncrement()
+```
  
  7. Click OK. 
  
