@@ -20,13 +20,11 @@ projects: []
 
 
 
-<ol style="list-style-type: decimal">
-<li>Create a new short integer field.</li>
-<li>Right-click the new field and select Field Calculator.</li>
-<li>Set the Parser to Python.</li>
-<li>Check the check box for Show Codeblock.</li>
-<li>Paste the following into the Pre-Logic Script Code:</li>
-</ol>
+<p>1 Create a new short integer field.</p>
+<p>2 Right-click the new field and select Field Calculator.</p>
+<p>3 Set the Parser to Python.</p>
+<p>4 Check the check box for Show Codeblock.</p>
+<p>5 Paste the following into the Pre-Logic Script Code:</p>
 <pre><code>rec=0
 def autoIncrement():
  global rec
@@ -37,11 +35,7 @@ def autoIncrement():
  else:
   rec += pInterval
  return rec</code></pre>
-<ol start="6" style="list-style-type: decimal">
-<li>Paste the following code in the smaller box below the Pre-Logic Script Code:</li>
-</ol>
+<p>6 Paste the following code in the smaller box below the Pre-Logic Script Code:</p>
 <pre><code>autoIncrement()</code></pre>
-<ol start="7" style="list-style-type: decimal">
-<li>Click OK.</li>
-</ol>
+<p>7 Click OK.</p>
 <p>Source: [<a href="https://support.esri.com/en/technical-article/000011137">Source 1</a>]</p>
