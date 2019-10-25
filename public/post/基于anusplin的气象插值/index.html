@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="当Project raster工具不能用时，另一个可以转换栅格数据Spatial reference的方法如下： 当栅格数据在目标referenc">
+  <meta name="description" content="1 Ausplin需要的插值数据格式如图1所示： 2 Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/">
+  <link rel="alternate" hreflang="en-us" href="/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/">
 
   
 
@@ -105,7 +105,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/">
+  <link rel="canonical" href="/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/">
 
   
   
@@ -118,15 +118,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="ChaosEco">
-  <meta property="og:url" content="/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/">
-  <meta property="og:title" content="转换栅格数据Spatial reference | ChaosEco">
-  <meta property="og:description" content="当Project raster工具不能用时，另一个可以转换栅格数据Spatial reference的方法如下： 当栅格数据在目标referenc"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/">
+  <meta property="og:title" content="基于Anusplin的气象插值 | ChaosEco">
+  <meta property="og:description" content="1 Ausplin需要的插值数据格式如图1所示： 2 Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-25T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-10-25T21:16:07&#43;08:00">
+    <meta property="article:modified_time" content="2019-10-25T22:43:54&#43;08:00">
   
 
   
@@ -152,12 +152,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/"
+    "@id": "/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/"
   },
-  "headline": "转换栅格数据Spatial reference",
+  "headline": "基于Anusplin的气象插值",
   
   "datePublished": "2019-10-25T00:00:00Z",
-  "dateModified": "2019-10-25T21:16:07+08:00",
+  "dateModified": "2019-10-25T22:43:54+08:00",
   
   "author": {
     "@type": "Person",
@@ -172,7 +172,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "当Project raster工具不能用时，另一个可以转换栅格数据Spatial reference的方法如下： 当栅格数据在目标referenc"
+  "description": "1 Ausplin需要的插值数据格式如图1所示： 2 Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m"
 }
 </script>
 
@@ -190,7 +190,7 @@
 
 
 
-  <title>转换栅格数据Spatial reference | ChaosEco</title>
+  <title>基于Anusplin的气象插值 | ChaosEco</title>
 
 </head>
 
@@ -390,7 +390,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>转换栅格数据Spatial reference</h1>
+  <h1>基于Anusplin的气象插值</h1>
 
   
 
@@ -421,7 +421,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 min read
   </span>
   
 
@@ -445,7 +445,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/&amp;text=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/&amp;text=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -458,7 +458,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/&amp;t=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/&amp;t=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -471,7 +471,7 @@
       
       
       <li>
-        <a href="mailto:?subject=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference&amp;body=/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc&amp;body=/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -484,7 +484,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/&amp;title=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/&amp;title=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -497,7 +497,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference%20/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc%20/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -510,7 +510,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/&amp;title=%e8%bd%ac%e6%8d%a2%e6%a0%85%e6%a0%bc%e6%95%b0%e6%8d%aeSpatial%20reference" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/&amp;title=%e5%9f%ba%e4%ba%8eAnusplin%e7%9a%84%e6%b0%94%e8%b1%a1%e6%8f%92%e5%80%bc" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -549,8 +549,65 @@
       
 
 
-<p>当Project raster工具不能用时，另一个可以转换栅格数据Spatial reference的方法如下：</p>
-<p>当栅格数据在目标reference的Data frame下可以正常显示时，可以使用右键-&gt;Data-&gt;Export data进行转换，如下图所示： <img src="/images/spatial_ref.png" /></p>
+<p>1 Ausplin需要的插值数据格式如图1所示： <img src="/Anusplin/fig1.png" alt="图1" /></p>
+<p>2 Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m为单位的投影坐标系（例如：WGS_1984_UTM_Zone_50N，50N为广东所在经度zone）。通常下载的SRTM高程数据只有坐标信息（GCS_WGS_1984），没有投影信息，应做如下转换（图2）： <img src="/Anusplin/fig2.png" alt="图2" /></p>
+<p>3 通过File-&gt;Add Data-&gt;Add XY Data（图3），将气象监测站点加载到arcgis中（注意：Geographic Coordinate System应该为 GCS_WGS_1984，因为监测站的经纬度信息是用度记录的，而不是m）。 <img src="/Anusplin/fig3.png" alt="图3" /></p>
+<p>4 将加载后的站点分布export为shapefile，之后使用投影转换为WGS_1984_UTM_Zone_50N，与dem保持一致（图4）。 <img src="/Anusplin/fig4.png" alt="图4" /></p>
+<p>5 重新计算站点的坐标信息x, y为以m为单位（图5）。并通过Extract multi values to points 工具提取站点的高程值。之后，导出为xls文件。 <img src="/Anusplin/fig5.png" alt="图5" /></p>
+<p>6 使用SPSS打开xls文件，并按照图6组织数据（注意station id格式为string）: <img src="/Anusplin/fig6.png" alt="图6" /></p>
+<p>7 将文件save as固定ASCII码格式的 .dat文件，并记录SPSS log文件中的Format信息以备后面使用（图7）。 <img src="/Anusplin/fig7.png" alt="图7" /></p>
+<p>8 将重新投影后的dem文件转为ASCII格式。</p>
+<p>9 按照如下准备插值脚本： Splina脚本如下：</p>
+<pre><code>hktem   #输出表明名
+0  #插值的单位，0表示无单位
+2  #自变量的个数，这里指经纬度
+1  #协变量的个数，这里指dem，注意也可以将高程设置为自变量，不用协变量
+0
+0
+173352.1 237121.9 0 1   ##前两数是对应dem文件中经度的范围（在arcgis中的source看），但要比dem中的范围要大一点才行
+2447510.7 2502840.3 0 1  ##前两数是对应dem文件中纬度的范围，但也要比dem中的范围要大一点才行
+-67 956 1 1  ##前两数dem文件的上下限
+1000  ##dem单位转换，m转为km
+0
+2
+1  ##需要插值的个数，这是是对年进行插值，故是1个。如为批量插值，例如每月插值，则为12
+0
+1
+1
+hktem.dat  ## dat文件
+50  ##站点的个数，可以设置的比实际站点数量大些
+3  #标签的宽度，我们的站点都是三位数的，所以是3
+(a12,f12.4,f12.4,f12.2,f12.1) #数据的格式，与上面spss的输出日志保持一致。如为批量插值，最后的f12.1可写为12f12.1
+hktem.res
+hktem.opt
+hktem.sur
+hktem.lis
+hktem.cov
+#空行
+</code></pre>
+<p>Lapgrd脚本如下：</p>
+<pre><code>hktem.sur  ## splina 输出的sur文件名
+0
+1
+
+1
+1
+173352.137314 237121.814760 30.25127014  ##前两个是dem文件中的经度范围，30.25127014：插值的分辨率（必须与dem文件一样）
+2
+2447510.70639 2502840.279470 30.25127014  ##前两个是dem中的纬度范围
+0
+2
+hkdem.txt  #ascii码的dem文件名称
+2
+-9999   #DEM中Nodata定义
+hktem.grd  #输出grd文件名，如果批量插值，罗列相应数量的文件名
+#要有一个空行
+</code></pre>
+<p>将上述代码分别复制到记事本中，然后更改后缀为.cmd文件，分别命名为interpolation_s.cmd和interpolation_l.cmd（注意#后的解释文字要删除）。</p>
+<p>10 新建如下脚本，命名为run.cmd。</p>
+<pre><code>splina&lt;interpolation_s.cmd&gt;interpolation_s.log
+lapgrd&lt;interpolation_l.cmd&gt;interpolation_l.log</code></pre>
+<p>11 将上述所有数据及文件放到Anusplin程序所在文件夹中，双击run.cmd运行，即可得到结果。 输出文件为 .grd格式，可用arcgis中raster to other formats 转为其他格式文件。</p>
 
     </div>
 
@@ -664,7 +721,7 @@
         <h3>Related</h3>
         <ul>
           
-          <li><a href="/post/%E5%9F%BA%E4%BA%8Eanusplin%E7%9A%84%E6%B0%94%E8%B1%A1%E6%8F%92%E5%80%BC/">基于Anusplin的气象插值</a></li>
+          <li><a href="/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/">转换栅格数据Spatial reference</a></li>
           
           <li><a href="/post/how-to-create-sequential-numbers-in-a-field-using-python-in-the-field-calculator/">How To: Create sequential numbers in a field using Python in the Field Calculator</a></li>
           
