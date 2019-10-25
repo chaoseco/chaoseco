@@ -5,12 +5,25 @@
     <link>/tags/gis/</link>
       <atom:link href="/tags/gis/index.xml" rel="self" type="application/rss+xml" />
     <description>GIS</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© ChaosEco, 2019</copyright><lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>GIS</title>
       <link>/tags/gis/</link>
     </image>
+    
+    <item>
+      <title>转换栅格数据Spatial reference</title>
+      <link>/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/%E8%BD%AC%E6%8D%A2%E6%A0%85%E6%A0%BC%E6%95%B0%E6%8D%AEspatial-reference/</guid>
+      <description>
+
+
+&lt;p&gt;当Project raster工具不能用时，另一个可以转换栅格数据Spatial reference的方法如下：&lt;/p&gt;
+&lt;p&gt;当栅格数据在目标reference的Data frame下可以正常显示时，可以使用右键-&amp;gt;Data-&amp;gt;Export data进行转换，如下图所示： &lt;img src=&#34;/images/spatial_ref.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How To: Create sequential numbers in a field using Python in the Field Calculator</title>
