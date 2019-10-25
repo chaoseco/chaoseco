@@ -20,15 +20,75 @@
       <description>
 
 
-&lt;p&gt;1 Ausplin需要的插值数据格式如图1所示： &lt;img src=&#34;/Anusplin/fig1.png&#34; alt=&#34;图1&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;2 Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m为单位的投影坐标系（例如：WGS_1984_UTM_Zone_50N，50N为广东所在经度zone）。通常下载的SRTM高程数据只有坐标信息（GCS_WGS_1984），没有投影信息，应做如下转换（图2）： &lt;img src=&#34;/Anusplin/fig2.png&#34; alt=&#34;图2&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;3 通过File-&amp;gt;Add Data-&amp;gt;Add XY Data（图3），将气象监测站点加载到arcgis中（注意：Geographic Coordinate System应该为 GCS_WGS_1984，因为监测站的经纬度信息是用度记录的，而不是m）。 &lt;img src=&#34;/Anusplin/fig3.png&#34; alt=&#34;图3&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;4 将加载后的站点分布export为shapefile，之后使用投影转换为WGS_1984_UTM_Zone_50N，与dem保持一致（图4）。 &lt;img src=&#34;/Anusplin/fig4.png&#34; alt=&#34;图4&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;5 重新计算站点的坐标信息x, y为以m为单位（图5）。并通过Extract multi values to points 工具提取站点的高程值。之后，导出为xls文件。 &lt;img src=&#34;/Anusplin/fig5.png&#34; alt=&#34;图5&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;6 使用SPSS打开xls文件，并按照图6组织数据（注意station id格式为string）: &lt;img src=&#34;/Anusplin/fig6.png&#34; alt=&#34;图6&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;7 将文件save as固定ASCII码格式的 .dat文件，并记录SPSS log文件中的Format信息以备后面使用（图7）。 &lt;img src=&#34;/Anusplin/fig7.png&#34; alt=&#34;图7&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;8 将重新投影后的dem文件转为ASCII格式。&lt;/p&gt;
-&lt;p&gt;9 按照如下准备插值脚本： Splina脚本如下：&lt;/p&gt;
+&lt;div id=&#34;ausplin1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1. Ausplin需要的插值数据格式如图1所示：&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-1&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig1.png&#34; alt=&#34;数据格式&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: 数据格式
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ausplinmarcgisdemmwgs_1984_utm_zone_50n50nzonesrtmgcs_wgs_19842&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;2. Ausplin需要以m为单位的经纬度，因此，在arcgis中需要将dem数据进行投影转换为m为单位的投影坐标系（例如：WGS_1984_UTM_Zone_50N，50N为广东所在经度zone）。通常下载的SRTM高程数据只有坐标信息（GCS_WGS_1984）没有投影信息，应做如下转换（图2）：&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig2.png&#34; alt=&#34;投影转换&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: 投影转换
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;file-add-data-add-xy-data3arcgisgeographic-coordinate-system-gcs_wgs_1984m&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;3. 通过File-&amp;gt;Add Data-&amp;gt;Add XY Data（图3），将气象监测站点加载到arcgis中（注意：Geographic Coordinate System应该为 GCS_WGS_1984，因为监测站的经纬度信息是用度记录的，而不是m）。&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig3.png&#34; alt=&#34;气象站点输入&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: 气象站点输入
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exportshapefilewgs_1984_utm_zone_50ndem4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;4. 将加载后的站点分布export为shapefile，之后使用投影转换为WGS_1984_UTM_Zone_50N，与dem保持一致（图4）。&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig4.png&#34; alt=&#34;站点投影坐标转换&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: 站点投影坐标转换
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;x-ym5extract-multi-values-to-points-xls&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;5. 重新计算站点的坐标信息x, y为以m为单位（图5）。并通过Extract multi values to points 工具提取站点的高程值。之后，导出为xls文件。&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-5&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig5.png&#34; alt=&#34;计算坐标&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: 计算坐标
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;spssxls6station-idstring&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;6. 使用SPSS打开xls文件，并按照图6组织数据（注意station id格式为string）:&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-6&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig6.png&#34; alt=&#34;SPSS数据格式设置&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 6: SPSS数据格式设置
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;save-asascii-.datspss-logformat7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;7. 将文件save as固定ASCII码格式的 .dat文件，并记录SPSS log文件中的Format信息以备后面使用（图7）。&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-7&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/Anusplin/fig7.png&#34; alt=&#34;dat文件数据格式信息&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 7: dat文件数据格式信息
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;demascii&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;8. 将重新投影后的dem文件转为ASCII格式。&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level4&#34;&gt;
+&lt;h4&gt;9. 按照如下准备插值脚本：&lt;/h4&gt;
+&lt;p&gt;Splina脚本如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;hktem   #输出表明名
 0  #插值的单位，0表示无单位
 2  #自变量的个数，这里指经纬度
@@ -75,10 +135,15 @@ hktem.grd  #输出grd文件名，如果批量插值，罗列相应数量的文�
 #要有一个空行
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;将上述代码分别复制到记事本中，然后更改后缀为.cmd文件，分别命名为interpolation_s.cmd和interpolation_l.cmd（注意#后的解释文字要删除）。&lt;/p&gt;
-&lt;p&gt;10 新建如下脚本，命名为run.cmd。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;run.cmd&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;10. 新建如下脚本，命名为run.cmd。&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;splina&amp;lt;interpolation_s.cmd&amp;gt;interpolation_s.log
 lapgrd&amp;lt;interpolation_l.cmd&amp;gt;interpolation_l.log&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;11 将上述所有数据及文件放到Anusplin程序所在文件夹中，双击run.cmd运行，即可得到结果。 输出文件为 .grd格式，可用arcgis中raster to other formats 转为其他格式文件。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;anusplinrun.cmd--.grdarcgisraster-to-other-formats-&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;11. 将上述所有数据及文件放到Anusplin程序所在文件夹中，双击run.cmd运行，即可得到结果。 输出文件为 .grd格式，可用arcgis中raster to other formats 转为其他格式文件。&lt;/h4&gt;
+&lt;/div&gt;
 </description>
     </item>
     
