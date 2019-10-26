@@ -1,0 +1,25 @@
+---
+title: Arcgis计算NDVI出现整数型结果的解决办法
+author: ''
+date: '2019-10-26'
+slug: arcgis计算ndvi出现整数型结果的解决办法
+categories: []
+tags: [GIS]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-10-26T13:39:24+08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>使用Arcgis中的Raster Calculator计算NDVI，或进行其他期望输出结果为小数的栅格计算时，当输入栅格为整数时，会得到整数输出，因而需要对数据类型进行转换。</p>
+<p>在进行计算时，应使用float()对输入数据进行转换，如下所示（以NDVI计算为例）：</p>
+<pre><code>(Float(&quot;b5&quot;) - Float(&quot;b4&quot;)) / (Float(&quot;b5&quot;)  +  Float(&quot;b4&quot;))</code></pre>
+<p>b4，b5分别为landsat 8遥感影像的第4和第5波段。</p>
